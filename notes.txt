@@ -1,0 +1,7 @@
+# Display all predfined datasets given with fastai
+from fastai.data.external import URLs
+print([attr for attr in dir(URLs) if not attr.startswith('_')])
+
+
+# List directories to verify paths
+print(os.listdir(base_path))
